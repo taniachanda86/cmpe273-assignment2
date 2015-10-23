@@ -1,7 +1,9 @@
 # cmpe273-assignment2
 Location and trip planner service in Go.
 The location service has the following REST endpoints to store and retrieve locations. All the data is persisted into MongoLab.
+
 1. Create New Location - POST /locations
+
 Request:
 {
    "name" : "John Smith",
@@ -10,6 +12,7 @@ Request:
    "state" : "CA",
    "zip" : "94113"
 }
+
 Response:
 HTTP Response Code: 201
 {
@@ -26,8 +29,10 @@ HTTP Response Code: 201
 }
 
 2. Get a Location - GET /locations/{location_id}
+
 Request:
 GET /locations/56292ac819e8994008a9976d
+
 Response:
 HTTP Response Code: 200
 {
@@ -45,6 +50,7 @@ HTTP Response Code: 200
 
 
 3. Update a Location - PUT /locations/{location_id}
+
 Request:
 PUT /locations/56292ac819e8994008a9976d
 {
@@ -70,7 +76,9 @@ HTTP Response Code: 201
 }
 
 4. Delete a Location - DELETE /locations/{location_id}
+
 Request:
 DELETE  /locations/12345
+
 Response:
 HTTP Response Code: 200
